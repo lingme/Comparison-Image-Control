@@ -59,17 +59,13 @@ namespace DoubleStaff
         {
             base.OnApplyTemplate();
             if((_GridLeft = GetTemplateChild("PART_Left") as Grid) != null)
-            {
                 _GridLeft.SizeChanged += _GridLeft_SizeChanged;
-            }
         }
 
         private void _GridLeft_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if(sender is Grid grid)
-            {
                 RectLeft = new Rect(0, 0, grid.ActualWidth + 5, grid.ActualHeight);
-            }
         }
 
         static DoubleStaffImage()
@@ -84,9 +80,7 @@ namespace DoubleStaff
             {
                 var memberExpression = propertyName.Body as MemberExpression;
                 if (memberExpression != null)
-                {
                     PropertyChanged(this, new PropertyChangedEventArgs(memberExpression.Member.Name));
-                }
             }
         }
     }
