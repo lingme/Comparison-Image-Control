@@ -1,13 +1,12 @@
-# WPF 交替图片显示控件
+# WPF CompareSlider
 ---
-WPF实现的图片交替显示控件，可以叠加两层。
 
-##### 命名空间引入：
+##### namespace：
 ```C {.line-numbers}
 xmlns:control="clr-namespace:DoubleStaff;assembly=DoubleStaff"
 ```
 
-##### 使用：
+##### use：
 
 ```C {.line-numbers}
 <control:DoubleStaffImage 
