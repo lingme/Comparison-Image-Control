@@ -1,4 +1,4 @@
-# WPF CompareSlider
+# WPF Comparison Slider
 ---
 
 ##### namespace：
